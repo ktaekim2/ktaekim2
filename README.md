@@ -1,16 +1,17 @@
-## Hi there 👋
+# Hello, I'm Kyungtae 👋
 
-<!--
-**ktaekim2/ktaekim2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 💻 기술 스택
+- [Java](./Java.md)
+- [Spring](./Spring.md)
+- [Vue.js](./Vue.js.md)
 
-Here are some ideas to get you started:
+## 📘 학습 노트
+- [Java 학습 노트](./JavaNotes.md)
+- [Spring 학습 노트](./SpringNotes.md)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🗂 로드맵
+- [2024 로드맵](./2024_Roadmap.md)
+
+## 📫 연락처
+- [LinkedIn](https://www.linkedin.com/in/kyungtae-kim-778ab4228)
+- [GitHub 블로그](https://velog.io/@ktaekim2)
