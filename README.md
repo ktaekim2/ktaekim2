@@ -5,6 +5,9 @@
 - [Spring](./Spring.md)
 - [Vue.js](./Vue.js.md)
 
+## 📘 학습 노트
+- [아키텍처](./Architecture.md)
+
 ## 🗂 로드맵
 - [2024 로드맵](./2024_Roadmap.md)
 
