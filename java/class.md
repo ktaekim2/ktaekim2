@@ -1,4 +1,4 @@
-# Java 주요 개념 요약
+# Class
 
 ## 중첩 클래스 (Nested Class)
 - **정의**: 다른 클래스 안에 선언된 클래스
@@ -78,25 +78,6 @@ class HelperClass {
     - 특히, **큰 프로젝트**에서는 중첩 클래스와 비공개 클래스를 많이 사용하면 코드가 복잡해지고, 유지보수가 어려워질 수 있습니다. 따라서 관련 클래스는 가능한 한 **독립된 파일**로 분리해 관리하는 방향으로 발전하고 있습니다.
     - 예를 들어, `Order`와 `OrderItem` 클래스가 밀접하게 관련되어 있다면 중첩 클래스로 작성할 수도 있지만, 유지보수성과 코드 가독성을 위해 별도 파일로 관리하는 것이 권장됩니다.
 
-
-## JUnit 5 - Parameterized Test
-- JUnit 5의 `@ParameterizedTest`를 사용해 **다양한 입력 값을 테스트할 수 있는 방법**을 배움.
-- **@ValueSource**: 단일 타입의 여러 값을 반복 테스트.
-- **@CsvSource**: 여러 인자와 기대 결과를 함께 제공해 테스트.
-
-```java
-@ParameterizedTest
-@CsvSource({
-  "1, true",
-  "2, true",
-  "3, true",
-  "4, false",
-  "5, false"
-})
-void containsTest(int input, boolean expectedResult) {
-  assertThat(numbers.contains(input)).isEqualTo(expectedResult);
-}
-```
 
 
 

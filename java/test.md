@@ -1,4 +1,4 @@
-# Java 학습 노트
+# test
 
 ## @DisplayName
 단순한 테스트의 경우 매서드 이름으로 나타내지만, 복잡한 설명이 필요한 경우 @DisplayName을 사용한다.
@@ -30,3 +30,23 @@ void charAtThrowsExceptionWhenIndexIsOutOfBounds() {
 ### 2. 학습 중 이해한 점
 - JUnit의 `@ParameterizedTest`를 활용하면 테스트 코드 중복을 줄일 수 있어 유지보수에 용이함.
 - 특히 `@CsvSource`는 여러 인자와 기대 결과를 한 번에 관리할 수 있어, 다양한 테스트 케이스를 작성할 때 편리함을 느꼈다.
+
+
+## JUnit 5 - Parameterized Test
+- JUnit 5의 `@ParameterizedTest`를 사용해 **다양한 입력 값을 테스트할 수 있는 방법**을 배움.
+- **@ValueSource**: 단일 타입의 여러 값을 반복 테스트.
+- **@CsvSource**: 여러 인자와 기대 결과를 함께 제공해 테스트.
+
+```java
+@ParameterizedTest
+@CsvSource({
+  "1, true",
+  "2, true",
+  "3, true",
+  "4, false",
+  "5, false"
+})
+void containsTest(int input, boolean expectedResult) {
+  assertThat(numbers.contains(input)).isEqualTo(expectedResult);
+}
+```
