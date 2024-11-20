@@ -6,6 +6,10 @@
 ## 🗂 로드맵
 - [2024 로드맵](./2024_roadmap.md)
 
+## 학습노트
+  - [2024 로드맵](./2024_havard_cs50.md)
+
+
 ## 📫 연락처
 - [LinkedIn](https://www.linkedin.com/in/kyungtae-kim-778ab4228)
 - [GitHub 블로그](https://velog.io/@ktaekim2)
