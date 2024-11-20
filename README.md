@@ -1,15 +1,12 @@
-## 💻 기술 스택
-- [Java](java/java.md)
-- [Spring](./Spring.md)
-- [Vue.js](./Vue.js.md)
+## 설계
+- [예약 시스템 설계](./reservation.md)
 
-## 🗂 로드맵
+
+## 학습 노트
+- [CS50](./2024_havard_cs50.md)
+
+## 기타
 - [2024 로드맵](./2024_roadmap.md)
 
-## 학습노트
-  - [2024 로드맵](./2024_havard_cs50.md)
-
-
-## 📫 연락처
+## 연락처
 - [LinkedIn](https://www.linkedin.com/in/kyungtae-kim-778ab4228)
-- [GitHub 블로그](https://velog.io/@ktaekim2)
