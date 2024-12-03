@@ -4,6 +4,10 @@
 
 ## 학습 노트
 - [CS50](./2024_havard_cs50.md)
+- [REST API](./rest_api.md)
+- [스프링 HATEOAS](./hateoas.md)
+- [스프링 모듈리스](./modulith.md)
+- [스프링 시큐리티](./spring_security.md)
 
 ## 기타
 - [2024 로드맵](./2024_roadmap.md)
