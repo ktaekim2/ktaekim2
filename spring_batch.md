@@ -70,3 +70,6 @@ JpaItemWriter는 쓰기 작업만 수행하는 스프링 배치의 구성 요소
 - JpaItemWriter는 DB 쓰기 작업만 하기 때문에 EntityManager만 사용한다.
 - EntityManager는 EntityManagerFactory를 통해 생성된다.
 - 트랜잭션은 Step에서 설정된 관리자(JpaTransactionManager)가 관리하므로 JpaItemWriter에서는 불필요하다.
+
+## 스프링 배치 빈 특징
+@StepScope, @JobScope 등으로 동적으로 Bean을 생성하기 때문에 자동으로 초기화 되지 않는다.  
