@@ -17,6 +17,23 @@
 엑세스 토큰은 기본 stateless 토큰이며 db에 저장하지 않는것이 표준이다. 서버는 엑세스 토큰에 포함된 정보만으로 인증과 권한을 확인한다.  
 보통 15분 정도의 짧은 만료 시간을 갖고, 재사용성이 적다.
 
+## 세션방식과 비교하면...
+### 세션
+- 보안적으로 안전한편.
+- 세션 정보를 서버 메모리에 저장되므로 서비스가 커질수록 메모리 부담이 증가함.
+
+### 토큰
+- 토큰의 경우 stateless(상태 비저장), 모든 인증 정보는 토큰에 포함.
+- 서버에서 상태를 유지하지 않으므로, 분산 서버에 유리.(확장성에 유리)
+- 토큰은 서명되어있어 변조 방지.
+
+
+
+## 로그인 유저 정보를 앞단에 어떻게 넘길 것인가
+
+### 헤더에 담기
+가장 간단한 방법이지만, 보안에 취약함. 넘겨야 하는 정보가 많아질 경우 확정성이 부족하고 네트워크 성능에 악영향. 그리고 유지보수성이 떨어짐.
+
 ## 테이블 설계
 
 ### nt_member
@@ -145,6 +162,8 @@ CREATE TABLE nt_refresh_tokens (
 
 CREATE INDEX idx_refresh_tokens_expires_at ON nt_refresh_tokens(expires_at);
 CREATE INDEX idx_refresh_tokens_del_yn ON nt_refresh_tokens(del_yn);
+CREATE INDEX idx_refresh_tokens_member_seq_device_info
+    ON nt_refresh_tokens (member_seq, device_info);
 
 ```
 
@@ -156,3 +175,29 @@ public void cleanExpiredRefreshTokens() {
     refreshTokenRepository.deleteByExpiresAtBefore(LocalDateTime.now());
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## JWT
