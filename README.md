@@ -8,6 +8,8 @@
 - [스프링 HATEOAS](./hateoas.md)
 - [스프링 모듈리스](./modulith.md)
 - [스프링 시큐리티](./spring_security.md)
+- [스프링 배치](./spring_batch.md)
+- [스프링 프레임워크](./spring.md)
 
 ## 기타
 - [2024 로드맵](./2024_roadmap.md)
