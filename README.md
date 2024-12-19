@@ -10,12 +10,13 @@
 - [스프링 시큐리티](./spring_security.md)
 - [스프링 배치](./spring_batch.md)
 - [스프링 프레임워크](./spring.md)
+- [자바](./java.md)
 
 ## 기타
 - [2024 로드맵](./2024_roadmap.md)
 
 ## 독서
-- [클린 코드](./clean_code.md)
+- [클린 코드](./clean_code.md)
 
 ## 연락처
 - [LinkedIn](https://www.linkedin.com/in/kyungtae-kim-778ab4228)
