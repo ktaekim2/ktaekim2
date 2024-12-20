@@ -176,7 +176,17 @@ public void cleanExpiredRefreshTokens() {
 }
 ```
 
+## 로그인
+로그인 과정에서 SecurityContextHolder에 로그인 정보를 저장한다.  
 
+```java
+Authentication authentication = authenticationManager.authenticate(
+        new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+```
+
+AuthenticationManager의 authenticate()를 통해 UserDetailsService 구현체의 loadUserByUsername()를 자동호출하여, authentication 객체를 반환한다.  
+유저 정보를 가지고 있는 authentication 객체를 SecurityContextHolder에 저장하면 로그인이 끝난다.  
+이후 토큰과 별개로 SecurityContextHolder객체의 getPrincipal()를 통해 UserDetails 객체를 생성할 수 있다.  
 
 
 
