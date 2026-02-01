@@ -36,16 +36,15 @@ Originally trained in **Aircraft Mechanical Engineering**, I translate the rigor
 ### ✍️ Latest Writings
 I write about architectural trade-offs and engineering decisions on my [Technical Blog](https://ktaekim2.github.io).
 
-- [Solving Race Conditions in Reservation Systems](https://ktaekim2.github.io/2026-02-01-handling-concurrency-with-pessimistic-lock)
-- [Building an AI-Driven Blogging Pipeline](https://ktaekim2.github.io/2026-01-03-ai-blogging-pipeline)
-- [Why This Blog Has No Tutorials](https://ktaekim2.github.io/2026-01-03-no-tutorial-policy)
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
 ### 📊 GitHub Stats
 
-![Kyungtae's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktaekim2&show_icons=true&theme=transparent)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ktaekim2&layout=compact&theme=transparent)
+![Kyungtae's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktaekim2&count_private=true&show_icons=true&theme=transparent)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ktaekim2&count_private=true&layout=compact&theme=transparent)
 
 ---
 
